@@ -9,7 +9,7 @@
     letter-spacing: 10px;"> List of Characters </h1>
     </div>
     <form action="{{route('search')}}" action="GET" class="flex-auto">
-    
+
         <div class="form-group" style="width:80%;margin:0 auto;">
             <input type="text"
             name="name"
@@ -26,7 +26,7 @@
         </div>
     </form>
     <div class="show">
-        <section class="text-gray-600 body-font">
+        <section class="text-gray-50 body-font">
             <div class="container px-5 py-24 mx-auto">
               <div class="flex flex-wrap -m-4">
                 <div class="p-4 md:w-1/3">
@@ -57,9 +57,9 @@
         @if($total >= $offset + 20)
             <a href="{{route('index', $offset + 20)}}" class="btn btn-light">Next</a>
         @endif
-        
-        </div>    
+
+        </div>
     </div>
-</div>            
+</div>
 
     @endsection
